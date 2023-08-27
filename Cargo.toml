@@ -1,0 +1,19 @@
+[package]
+name = "roboware_path_planner"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+safe_drive = "0.2"
+nav_msgs = {path = "/tmp/.msg/nav_msgs"}
+visualization_msgs = {path = "/tmp/.msg/visualization_msgs"}
+
+ros2_rust_util = {git = "https://github.com/TakanoTaiga/ros2_rust_util.git"}
+planning_util = {path = "/home/taiga/planning_util"}
+
+[package.metadata.ros]
+msg = ["nav_msgs", "visualization_msgs"] 
+msg_dir = "/tmp/.msg/"
+safe_drive_version = "0.2"
