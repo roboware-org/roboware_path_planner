@@ -10,8 +10,10 @@ safe_drive = "0.2"
 nav_msgs = {path = "/tmp/.msg/nav_msgs"}
 visualization_msgs = {path = "/tmp/.msg/visualization_msgs"}
 
+nalgebra = "0.29"
+
 ros2_rust_util = {git = "https://github.com/TakanoTaiga/ros2_rust_util.git"}
-planning_util = {path = "/home/taiga/planning_util"}
+planning_util = {path = "/Users/taigatakano/Desktop/planning_util"}
 
 [package.metadata.ros]
 msg = ["nav_msgs", "visualization_msgs"] 
